@@ -1,0 +1,37 @@
+{
+  "name": "objection-example-koa",
+  "version": "2.0.0",
+  "description": "Objection.js koa example",
+  "main": "server.js",
+  "scripts": {
+    "migrate": "knex migrate:latest",
+    "start": "nodemon --ext \"js,ts,json\" --ignore \"__test__/**/*.spec.ts\" --exec \"ts-node server.ts\""
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "author": "Sami Koskimäki",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^6.1.0",
+    "express-session": "^1.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.3",
+    "lodash": "^4.17.21",
+    "objection": "^2.1.0",
+    "passport": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/lodash": "^4.14.173",
+    "@types/node": "^16.9.6",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.13",
+    "ts-node": "^10.2.1",
+    "typescript": "3.7.2"
+  }
+}
